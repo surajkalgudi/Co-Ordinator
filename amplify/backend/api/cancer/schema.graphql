@@ -1,0 +1,95 @@
+type Test @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Name: String
+  Uhid: Int
+  Tests: String
+  isComplete: Boolean
+}
+
+type Appointments @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Name: String!
+  Uhid: Int
+  Doctor: String
+  Description: String
+  Date: String
+  Time: String
+  isComplete: Boolean
+}
+
+type UpdatePatients @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Name: String
+  Uhid: Int
+  Date: String
+  BloodPressure: String
+  HbPercentage: String
+  Sp02: String
+  Fbs: String
+  Ppbs: String
+  Height: Float
+  Weight: Float
+  Bmi: Float
+  TrunkFat: String
+  HbA1c: String
+  HandsFat: String
+  TotalSkeletalMuscle: String
+  TrunkSkeletalMuscle: String
+  LegsSkeletalMuscle: String
+  TotalFat: String
+  LeftHandSP: String
+  RightHandSP: String
+  LeftLegSP: String
+  HandsSkeletal: String
+  LegsFat: String
+  MidArm: String
+  TricepsSkinFold: String
+  CalfSkinCircumference: String
+  LeftHandEndurance: String
+  RightLegSP: String
+  LeftLegEndurance: String
+  RightLegEndurance: String
+  RightHandEndurance: String
+  Waist: String
+  RbcCount: String
+  CalfCircumference: String
+  Neutrophil: String
+  Eosinophil: String
+  Lymphocyte: String
+  Basophil: String
+  Monocyte: String
+  HctPcv: String
+  Hip: String
+  Albumin: String
+  WbcCount: String
+  Creatinine: String
+  Urea: String
+  TotalCholesterol: String
+  LdlCholesterol: String
+  HdlCholesterol: String
+  Globulin: String
+  Triglyceride: String
+  DischargeDate: String
+  VldlCholesterol: String
+}
+
+type CreatePatients @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Name: String
+  Age: String
+  MaritalStatus: String
+  Children: Int
+  Gender: String
+  Hospital: String
+  Doctor: String
+  Uhid: Int
+  PhoneNumber: AWSPhone
+  CancerType: String
+  Stage: String
+  TreatmentPlan: String
+  Comorbidities: String
+  History: String
+  SocialHistory: String
+  FamilyHistory: String
+  Address: String
+} 
